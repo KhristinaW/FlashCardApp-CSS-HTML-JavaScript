@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(249, 249, 250);
+    margin:10px;
+    padding:10px;
+    width:100vh;
+    max-height:1200px;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.innerContainer{
+    display:flex;
+    flex-direction: row;
+    margin-bottom:50px;
+}
+
+h3{
+    word-spacing: 376px;
+}
+
+input{
+   padding:10px;
+   width: 400px;
+   height:30px;
+   border:none;
+   border-radius: 5px;
+   box-shadow: 0px 0px 1px;
+}
+
+textarea{
+   padding:10px;
+   width: 400px;
+   height:90px;
+   margin-left:40px;
+   border: none;
+   border-radius: 5px;
+   box-shadow: 0px 0px 1px;
+}
+
+button{
+    padding:7px;
+    border-radius: 5px;
+    border:none;
+    background-color: lightgray;
+    font-weight: bold;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#save{
+    background-color: black;
+    color:white;
+    font-weight: normal;
+}
+
+p{
+    font-size:13px;
+    color:rgb(70, 70, 70);
+    margin-top:10px;
+}
+
+.flashcard{
+    margin:5px;
+    width:400px;
+    height:120px;
+    max-height:600px;
+    justify-items:center;
+    perspective: 1000px;
+}
+
+.flashcard-inner{
+    position: relative;
+    height:100%;
+    width:100%;
+    transform-style: preserve-3d;
+    transition:transform 0.7s;
+}
+
+.face{  
+    position: absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    padding:20px;
+    text-align: center; 
+    border-radius: 15px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.front{
+    box-shadow: 0px 0px 1px;
+}
+
+.back{
+    background-color: lightgray;
+    transform: rotateY(180deg);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap:20px;
+    max-width: 1200px;
+    margin: 0 auto
+}
